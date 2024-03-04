@@ -20,9 +20,7 @@ const FirstTooltip = ({text,children}) =>{
       >
         {showTooltip && (
           <div className="tooltiptext">
-            <div className="text">
               <h2 className="tooltip">{text}</h2>
-            </div>
           </div>
         )}
         <div className="child">{children}</div>

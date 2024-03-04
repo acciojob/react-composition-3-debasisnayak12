@@ -18,9 +18,7 @@ const SecondTooltip = ({text,children}) => {
     >
       {isHover && (
         <div className="tooltiptext">
-          <div className="text">
             <p className="tooltip">{text}</p>
-          </div>
         </div>
       )}
       <div className="child">{children}</div>
