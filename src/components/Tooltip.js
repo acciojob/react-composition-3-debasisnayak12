@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const FirstTooltip = ({text,children}) =>{
+const Tooltip = ({text,children}) =>{
     const [showTooltip,setShowToolTip] = useState(false);
     // console.log(children.props.children)
 
@@ -18,13 +18,14 @@ const FirstTooltip = ({text,children}) =>{
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
+        {children}
         {showTooltip && (
           <div className="tooltiptext">
-              <h2 className="tooltip">{text}</h2>
+              <h2>{text}</h2>
           </div>
         )}
-        <div className="child">{children}</div>
+        
       </div>
     );
 }
-export default FirstTooltip;
+export default Tooltip;

@@ -1,19 +1,18 @@
 import React from "react";
 import './../styles/App.css';
-import FirstTooltip from "./FirstTooltip";
-import SecondTooltip from "./SecondTooltip";
+import Tooltip from "./Tooltip";
 
 const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <FirstTooltip text="This is tooltip">
-          <h2>Hover over me</h2>
-        </FirstTooltip>
+        <Tooltip text="This is a tooltip">
+          <h2 className="tooltip">Hover over me</h2>
+        </Tooltip>
         <hr />
-        <SecondTooltip text="This is another tooltip">
-          <p>Hover over me to see another tooltip</p>
-        </SecondTooltip>
+        <Tooltip text="This is another tooltip">
+          <p className="tooltip">Hover over me to see another tooltip</p>
+        </Tooltip>
     </div>
   )
 }
